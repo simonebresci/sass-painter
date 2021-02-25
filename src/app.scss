@@ -1,10 +1,116 @@
-
+@import "common";
+@import "colors";
 
 @mixin content-style{
   width: 1400px;
+  margin: 0 auto;
 }
 
-.header-background{
-  height: 110px;
-  background-color: black;
+*{
+  color: grey;
 }
+
+// HEADER TOP*******************************************************************
+.header-top-background{
+  @include background-common;
+  background-color: black;
+  height: 40px;
+}
+
+
+.header-top{
+  display: flex;
+  justify-content: flex-end;
+
+  @include content-style;
+  &-menu{
+    @include menu-inline-ul-light-style-1;
+  }
+
+  &-menu li:hover{
+    @include hover-standard-style1;
+  }
+}
+// /HEADER TOP******************************************************************
+
+// HEADER BOTTOM****************************************************************
+.header-bottom-background{
+  @include background-common;
+  background-color: black;
+  height: 70px;
+}
+
+.header-bottom{
+  display: flex;
+  justify-content: center;
+
+  @include content-style;
+  &-menu{
+    @include menu-inline-ul-light-style-2;
+    float: right;
+  }
+
+  &-menu li:hover{
+    @include hover-standard-style1;
+  }
+}
+// /HEADER BOTTOM***************************************************************
+
+// JUMBOTRON****************************************************************
+.jumbotron-background{
+  @include background-common;
+}
+
+.jumbotron{
+  @include content-style;
+  display: flex;
+  justify-content: center;
+
+  &-col-left, &-col-center, &-col-right{
+    width: calc(100% / 3);
+    border: 1px solid orange;
+  }
+
+  &-col-left{
+    img{
+      width: 100%;
+    }
+  }
+}
+// /JUMBOTRON*******************************************************************
+
+// OVERVIEW ********************************************************************
+.overview-background{
+  @include background-common;
+  background-color: $colorBgGrey1;
+  // height: 60px;
+}
+
+.overview{
+  @include content-style;
+  display: flex;
+  justify-content: center;
+
+  &-menu{
+    @include menu-inline-ul-light-style-3;
+  }
+
+  &-menu li:hover{
+    @include hover-standard-style1;
+  }
+}
+// /JUMBOTRON*******************************************************************
+
+// ROW-1 ********************************************************************
+.row-1-background{
+  @include background-common;
+}
+
+.row-1{
+  @include content-style;
+  text-align: center;
+  img{
+    width: 100%;
+  }
+}
+// /ROW-1 *******************************************************************
