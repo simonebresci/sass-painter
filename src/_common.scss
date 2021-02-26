@@ -118,61 +118,16 @@
 
    i{
      color: $colorGrey1;
-     margin-left: 5px;
    }
 }
 @mixin menu-li-grey-style-1{
   @include resetListBullets;
   cursor:pointer;
   color: $colorDarkGrey1;
-  margin-right: 45px;
 }
 
-// /MENU INLINE LI STYLES SPECIFIC***********
 
-@mixin list-paragraph-style-1{
-  @include resetListBullets;
-  color: $colorTxt5;
 
-  li{
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-
-  &-title{
-    @include list-title-style-1;
-    color: $colorTxt1;
-  }
-
-  &-viewmore{
-    font-weight: bold;
-    color: $colorTxt1;
-
-    i{
-      margin-left: 5px;
-    }
-  }
-
-  &-viewmore:hover{
-    @include hover-standard-style1;
-  }
-
-}
-
-// PERSONALIZED LIST TITLES*****************
-@mixin list-title-style-1{
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-@mixin list-title-style-2{
-  font-size: 14px;
-  color: $colorTxt1;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-// /PERSONALIZED LIST TITLES*****************
 
 // /MENU ***********************************************************************
 
@@ -219,8 +174,8 @@
   font-size: 12px;
   font-weight: bold;
   line-height: 50px;
-  color: $colorTxt1;
-  background-color: $colorBg8;
+  color: $colorWhite1;
+  background-color: $colorBlue1;
 }
 
 @mixin btn-category-hover{
