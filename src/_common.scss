@@ -109,6 +109,25 @@
   margin-right: 45px;
 }
 
+@mixin menu-ul-grey-style-1{
+
+
+   li{
+     @include menu-li-grey-style-1;
+   }
+
+   i{
+     color: $colorGrey1;
+     margin-left: 5px;
+   }
+}
+@mixin menu-li-grey-style-1{
+  @include resetListBullets;
+  cursor:pointer;
+  color: $colorDarkGrey1;
+  margin-right: 45px;
+}
+
 // /MENU INLINE LI STYLES SPECIFIC***********
 
 @mixin list-paragraph-style-1{
@@ -158,6 +177,40 @@
 // /MENU ***********************************************************************
 
 // BUTTONS *********************************************************************
+@mixin btn-download-style1{
+  display: flex;
+  width: 250px;
+  height: 65px;
+  padding: 5px;
+  color: $colorDarkGrey1;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid $colorDarkGrey1;
+
+  .button-download-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+
+    .trial{
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+  }
+
+
+  .button-download-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+  }
+
+}
+
+
 @mixin btn-category{
   text-align: center;
   display: inline-block;

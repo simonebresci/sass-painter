@@ -1,7 +1,3 @@
-* {
-  color: grey;
-}
-
 .header-top-background {
   min-width: 1410px;
   background-color: black;
@@ -73,20 +69,77 @@
 
 .jumbotron-background {
   min-width: 1410px;
+  height: 460px;
+  background-size: cover;
+  background-image: url("../img/hero-pe-8.jpg");
 }
 
 .jumbotron {
   width: 1400px;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 .jumbotron-col-left, .jumbotron-col-center, .jumbotron-col-right {
   width: calc(100% / 3);
-  border: 1px solid orange;
 }
-.jumbotron-col-left img {
-  width: 100%;
+.jumbotron-col-center .product-name {
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.jumbotron-col-center .product-name .new {
+  font-weight: bold;
+  font-style: italic;
+  color: #b936b2;
+}
+.jumbotron-col-center .product-description {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+.jumbotron-col-center .product-features {
+  list-style: none;
+  cursor: pointer;
+  color: #333333;
+  margin-right: 45px;
+}
+.jumbotron-col-center .button-download {
+  display: flex;
+  width: 250px;
+  height: 65px;
+  padding: 5px;
+  color: #333333;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #333333;
+}
+.jumbotron-col-center .button-download .button-download-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.jumbotron-col-center .button-download .button-download-text .trial {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.jumbotron-col-center .button-download .button-download-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.jumbotron-col-center .button-download:hover {
+  transition: opacity 0.4s, text-shadow 0.2s;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 70%;
+}
+.jumbotron-col-right {
+  margin-top: 20px;
+  color: white;
+  background-color: black;
 }
 
 .overview-background {
@@ -132,4 +185,23 @@
 }
 .row-1 img {
   width: 100%;
+}
+
+.row-2-background {
+  min-width: 1410px;
+  background-image: url("../img/flow-icons-bg.png");
+}
+
+.row-2 {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.row-2 .col-left, .row-2 .col-center, .row-2 .col-right {
+  width: calc(100% / 3);
+  text-align: center;
+}
+.row-2 .col-left img, .row-2 .col-center img, .row-2 .col-right img {
+  width: 200px;
 }

@@ -6,10 +6,6 @@
   margin: 0 auto;
 }
 
-*{
-  color: grey;
-}
-
 // HEADER TOP*******************************************************************
 .header-top-background{
   @include background-common;
@@ -59,22 +55,66 @@
 // JUMBOTRON****************************************************************
 .jumbotron-background{
   @include background-common;
+  height: 460px;
+  background-size: cover;
+  background-image: url('../img/hero-pe-8.jpg');
 }
 
 .jumbotron{
   @include content-style;
+  height: 100%;
   display: flex;
   justify-content: center;
 
   &-col-left, &-col-center, &-col-right{
     width: calc(100% / 3);
-    border: 1px solid orange;
+    // border: 1px solid orange;
   }
 
-  &-col-left{
-    img{
-      width: 100%;
+  &-col-center{
+    .product-name{
+      font-size: 26px;
+      margin-top: 50px;
+      margin-bottom: 15px;
+
+      .new{
+
+        font-weight: bold;
+        font-style: italic;
+        color: $colorViolet1;
+      }
+
     }
+
+    .product-description{
+      font-size: 21px;
+      margin-bottom: 15px;
+    }
+
+    .product-features{
+      @include menu-li-grey-style-1;
+
+    }
+
+    .button-download{
+      @include btn-download-style1;
+    }
+
+    .button-download:hover{
+      @include hover-standard-style1;
+    }
+
+  }
+
+  &-col-right{
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+
+    // .list-buy{
+    //   @include menu-ul-grey-style-1;
+    // }
+
   }
 }
 // /JUMBOTRON*******************************************************************
@@ -83,7 +123,7 @@
 .overview-background{
   @include background-common;
   background-color: $colorBgGrey1;
-  // height: 60px;
+
 }
 
 .overview{
@@ -104,6 +144,7 @@
 // ROW-1 ********************************************************************
 .row-1-background{
   @include background-common;
+
 }
 
 .row-1{
@@ -114,3 +155,35 @@
   }
 }
 // /ROW-1 *******************************************************************
+
+
+// ROW-2 ********************************************************************
+.row-2-background{
+  @include background-common;
+  background-image: url("../img/flow-icons-bg.png");
+}
+
+.row-2{
+  @include content-style;
+  display: flex;
+  justify-content: center;
+
+
+  .col-left, .col-center, .col-right{
+    width: calc(100% / 3);
+    text-align: center;
+
+    img{
+      width: 200px;
+
+    }
+
+    .list-art{
+      // @include menu-ul-light-style-1;
+
+
+    }
+  }
+
+}
+// ROW-2 ********************************************************************
