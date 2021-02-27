@@ -9,29 +9,6 @@
   margin: 0 auto;
 }
 
-//  LINKS **********************************************************************
-// REMOVE DEFAULT STYLE FROM LINKS
-@mixin link-style-reset{
-  text-decoration: none;
-
-  a{
-    text-decoration: none;
-  }
-}
-
-// PERSONALIZED LINKS**************
-@mixin link-style-1{
-  color: $colorTxt4;
-  text-decoration: none;
-}
-
-@mixin link-style-1-bold{
-  color: $colorTxt4;
-  font-weight: bold;
-  text-decoration: none;
-}
-// /PERSONALIZED LINKS*************
-
 // *****************************************************************************
 
 // MENU & lIST *****************************************************************
@@ -89,26 +66,6 @@
   margin-right: 20px;
 }
 
-@mixin menu-inline-ul-light-style-3{
-   li{
-     @include menu-inline-li-light-style-3;
-   }
-
-   i{
-     color: $colorWhite1;
-     margin-left: 5px;
-   }
-
-   select{
-     color: grey;
-   }
-}
-@mixin menu-inline-li-light-style-3{
-  @include menu-inline-li-common;
-  color: grey;
-  margin-right: 45px;
-}
-
 @mixin menu-ul-grey-style-1{
 
 
@@ -125,9 +82,6 @@
   cursor:pointer;
   color: $colorDarkGrey1;
 }
-
-
-
 
 // /MENU ***********************************************************************
 
@@ -165,7 +119,6 @@
 
 }
 
-
 @mixin btn-category{
   text-align: center;
   display: inline-block;
@@ -185,103 +138,8 @@
   background-color: $colorBg9;
 }
 
-@mixin btn-transparent-style-1{
-  display: inline-block;
-  font-size: 12px;
-  padding: 5px 10px;
-  color: $colorTxt2;
-  border: 1px solid $colorTxt2;
-  border-radius: 5px;
-}
-
-
-// PERSONALIZED LIST OF BUTTONS PAGE
-@mixin btn-pages-list-style-1{
-  // Details first element
-  .btn-page:first-child{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-  // Selected page button style
-  .btn-page:nth-child(2){
-    font-weight: bold;
-    color: white;
-    background-color: $colorBg5;
-  }
-  // Details last element
-  .btn-page:last-child{
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-
-  .btn-page:hover{
-    @include hover-standard-style1;
-  }
-}
-
-// BUTTON PAGE
-@mixin btn-page-style-1{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 35px;
-  font-size: 16px;
-  color: $colorTxt4;
-  border: 1px solid $colorBrd2;
-
-}
 
 // *****************************************************************************
-
-// CATEGORIES & TAG LABELS *****************************************************
-
-@mixin category-label-common{
-  display: inline-block;
-  font-size: 10px;
-  font-weight: bold;
-  border-radius: 4px;
-  padding: 5px;
-}
-
-@mixin category-label-style-1{
-  @include category-label-common;
-
-  color: $colorTxt1;
-  background-color:  $colorBg5;
-  margin-bottom: 5px;
-}
-
-@mixin category-label-style-2{
-  @include category-label-common;
-  color: $colorTxt1;
-  background-color:  $colorBg13;
-  margin-bottom: 10px;
-}
-
-@mixin tag-label-style-1{
-  display: inline-block;
-  font-size: 10px;
-  font-weight: bold;
-  color: $colorTxt1;
-  background-color:  $colorBg13;
-  border-radius: 15px;
-  padding: 2px 6px;
-  margin-bottom: 10px;
-}
-// /CATEGORIES & TAG LABELS ***************************************************
-
-// GRIDS ***********************************************************************
-@mixin gridRow3{
-  display: flex;
-  flex-wrap: wrap;
-  > img{
-    width: calc(100% / 3);
-  }
-}
-// /GRIDS *********************************************************************
-
 
 // HOVER ANIMATIONS ***********************************************************
 @mixin hover-standard-common{
